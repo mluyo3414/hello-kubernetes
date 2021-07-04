@@ -21,7 +21,7 @@ spec:
       serviceAccountName: hello-kubernetes-hello-kubernetes
       containers:
         - name: hello-kubernetes
-          image: "paulbouwer/hello-kubernetes:1.10"
+          image: "mluyo3414/hello-kubernetes:1.10"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
@@ -49,7 +49,7 @@ spec:
               fieldRef:
                 fieldPath: spec.nodeName
           - name: CONTAINER_IMAGE
-            value: "paulbouwer/hello-kubernetes:1.10"
+            value: "mluyo3414/hello-kubernetes:1.10"
       nodeSelector:
         kubernetes.io/arch: amd64
         kubernetes.io/os: linux
